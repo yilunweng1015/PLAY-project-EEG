@@ -4,13 +4,11 @@
 ## **There are two things to do for EEG data analysis** 
 
 1. EEG preprocessing: EEG raw data will be filtered, re-referenced, component-identified, component-removed, epoched and binned.
-   Then ERP data will be computed in the end.
+   Then ERP data will be computed in the end.  
+    => Using the MATLAB script "play_preprocessing.m" (Output file: play_a_xxx.erp)
 
-  => Using the MATLAB script "play_preprocessing.m" (Output file: play_a_xxx.erp)
-
-2. Performing the mass univariate analyses of event-related brain potentials (ERPs). 
-
-  => using the MATLAB script "play_mass_univariate_analysis.m"
+2. Performing the mass univariate analyses of event-related brain potentials (ERPs).   
+    => using the MATLAB script "play_mass_univariate_analysis.m"
 
 
 ## **1. EEG preprocessing**  
