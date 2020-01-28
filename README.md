@@ -27,7 +27,8 @@
     This should be done after preprocessing and before running ICA.  
     Save file that is checked with the name: 'play_a_xxx_fl_rr_clean.set'.  
 
-**(3) Run the second part of script.**   This part runs ICA on the EEG data.  
+**(3) Run the second part of script.**   
+    This part runs ICA on the EEG data.  
     ICA goes through the raw data and identifies and separates the raw data into different components.  
     It identifies things such as eye movement artifacts, noises or activations.  
 
