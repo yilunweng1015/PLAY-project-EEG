@@ -13,7 +13,7 @@
   => using the MATLAB script "play_mass_univariate_analysis.m"
 
 
-### **1. EEG preprocessing**  
+## **1. EEG preprocessing**  
 
 **(1) Run the first part of script.**   
     This part filters and references the EEG raw data. 
@@ -54,6 +54,7 @@
   
   The .txt file is a summary about how much percentage of data is rejected.  
 
+
 **(7) Create individual ERP.**  
     This rejects all the epochs that have been marked as bad in the artifact rejection and averages the good, 
     remaining trials together to create an averaged ERP on the individual level.
@@ -67,7 +68,7 @@
 
 
 
-### **2. Mass univariate analysis**
+## **2. Mass univariate analysis**
 
 (1) Download and install the Mass Univariate Toolbox 
     (https://openwetware.org/wiki/Mass_Univariate_ERP_Toolbox).
