@@ -15,14 +15,16 @@
 
 ### **1. EEG preprocessing**  
 
-**(1) Run the first part of script.**   This part filters and references the EEG raw data. 
+**(1) Run the first part of script.**   
+    This part filters and references the EEG raw data. 
     Use the high pass and low pass variables you have set, it filters out the data that is outside of the low pass-high pass range.   
     It also references the data to the M1 and M2 electrodes.  
 
   If this part is successfully run, you should see the file named as 'play_a_xxx_fl_rr.set' in the corresponding subject folder.
 
 
-**(2) Inspect manually and remove bad blocks the preprocessed EEG data.**   This should be done after preprocessing and before running ICA.  
+**(2) Inspect manually and remove bad blocks the preprocessed EEG data.**   
+    This should be done after preprocessing and before running ICA.  
     Save file that is checked with the name: 'play_a_xxx_fl_rr_clean.set'.  
 
 **(3) Run the second part of script.**   This part runs ICA on the EEG data.  
