@@ -3,12 +3,15 @@
 % Julie Schneider
 % August 24, 2018
 
-anadir = '\Users\Rachel\Dropbox\play project\eeg\analysis\';
-rawdir = '\Users\Rachel\Dropbox\play project\eeg\analysis\rawdata\';
-workdir = '\Users\Rachel\Dropbox\play project\eeg\analysis\wkdir\';
-txtdir = '\Users\Rachel\Dropbox\play project\eeg\analysis\txtdir\';
-erpdir = '\Users\Rachel\Dropbox\play project\eeg\analysis\erpset\';
-remotedir = '\Users\Rachel\Dropbox\play project\eeg\analysis\wkdir\';
+%anadir = 'Y:\projects\play\analysis\eeg\Analysis\';
+rawdir = 'Y:\projects\play\analysis\eeg\rawdata\';
+%workdir = 'Y:\projects\blast\data\eeg\Analysis\wkdir\';
+%txtdir = 'Y:\projects\blast\data\eeg\Analysis\txtdir\';
+%erpdir = 'Y:\projects\blast\data\eeg\Analysis\erpset\';
+workdir = 'Y:\projects\play\analysis\eeg\wkdir\';
+txtdir = 'Y:\projects\play\analysis\eeg\txtdir\';
+erpdir = 'Y:\projects\play\analysis\eeg\erpset\';
+
 
 % addpath([pathcode 'Matlab Packages' filesep 'Nway3.1' filesep ]);
 % addpath([pathcode 'Matlab' filesep 'EEGLAB Tools' filesep ]);
