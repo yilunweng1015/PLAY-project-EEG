@@ -1,21 +1,40 @@
-## EEG Data analysis (01/23/2020 updated by Yi-Lun Weng)
+## EEG/ERP Data analysis (03/24/2020 updated by Yi-Lun Weng)
   
 
-## **There are two things to do for EEG data analysis** 
+## **Overview** 
 
 1. EEG preprocessing: EEG raw data will be filtered, re-referenced, component-identified, component-removed, epoched and binned.
    Then ERP data will be computed in the end.  
-    => Using the MATLAB script "play_preprocessing.m" (Output file: play_a_xxx.erp)
 
-2. Performing the mass univariate analyses of event-related brain potentials (ERPs).   
-    => using the MATLAB script "play_mass_univariate_analysis.m"
+    => Input data:    play_a_xxx.set
+    => MATLAB script: 1.play_filter_ref.m & 2.play_ica.m & 3.play_ev_bin_epo.m & 4.play_erp.m
+    => Output data:   play_a_xxx.erp
+   
+2. Performing the mass univariate analyses (factorial ANOVA) on ERP.   
 
+    => Input data:    play_all_firstlook.GND
+    => MATLAB script: play_MUT_firstlook_factorial_anova.m
+    => Output data:   play_MUT_firstlook_factorial_anova_result.csv
+
+3. Performing the mass univariate analyses (mean window) on ERP.   
+
+    => Input data:    play_all_firstlook.GND
+    => MATLAB script: play_MUT_firstlook_mean_window_ana.m
+    => Output data:   play_MUT_firstlook_mean_window_result.csv
+
+3. Performing the mass univariate analyses (time point by time point) on ERP.   
+
+    => Input data:    play_all_firstlook.GND
+    => MATLAB script: play_MUT_firstlook_timepoint_by_timepoint_ana.m
+    => Output data:   play_MUT_firstlook_timepoint_by_timepoint_result.csv
+
+#### ***All the data files and scripts are saved on the NAS: \projects\play\analysis\eeg***
 
 ## **1. EEG preprocessing**  
 
 **(1) Filter and reference the EEG raw data.**   
-    Use the high pass and low pass variables you have set, it filters out the data that is outside of the low pass-high pass range.   
-    It also references the data to the M1 and M2 electrodes.  
+    Use the high pass (0.1) and low pass (30) variables you have set, it filters out the data that is outside of the low pass-high pass range.   
+    It also references the data to the TP9 and TP10 electrodes.  
 
   If this part is successfully run, you should see the file named as 'play_a_xxx_fl_rr.set' in the corresponding subject folder.
 
@@ -33,7 +52,7 @@
 
 **(4) Reject bad components manually.**  
     Components, such as eye blinks and eye movements, are marked here and will later be rejected.
-    Save manually rejected file as: 'play_a_xxx_fl_rr_ica_clean.set'
+    Save manually rejected file as: 'play_a_xxx_fl_rr_ica.set'
 
 
 **(5) Epoch EEG data.**  
