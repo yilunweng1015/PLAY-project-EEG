@@ -7,25 +7,33 @@
    Then ERP data will be computed in the end.  
 
     => Input data:    play_a_xxx.set
+    
     => MATLAB script: 1.play_filter_ref.m & 2.play_ica.m & 3.play_ev_bin_epo.m & 4.play_erp.m
+    
     => Output data:   play_a_xxx.erp
    
 2. Performing the mass univariate analyses (factorial ANOVA) on ERP.   
 
     => Input data:    play_all_firstlook.GND
+    
     => MATLAB script: play_MUT_firstlook_factorial_anova.m
+    
     => Output data:   play_MUT_firstlook_factorial_anova_result.csv
 
 3. Performing the mass univariate analyses (mean window) on ERP.   
 
     => Input data:    play_all_firstlook.GND
+    
     => MATLAB script: play_MUT_firstlook_mean_window_ana.m
+    
     => Output data:   play_MUT_firstlook_mean_window_result.csv
 
 3. Performing the mass univariate analyses (time point by time point) on ERP.   
 
     => Input data:    play_all_firstlook.GND
+    
     => MATLAB script: play_MUT_firstlook_timepoint_by_timepoint_ana.m
+    
     => Output data:   play_MUT_firstlook_timepoint_by_timepoint_result.csv
 
 #### ***All the data files and scripts are saved on the NAS: \projects\play\analysis\eeg***
