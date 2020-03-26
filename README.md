@@ -6,11 +6,11 @@
 1. EEG preprocessing: EEG raw data will be filtered, re-referenced, component-identified, component-removed, epoched and binned.
    Then ERP data will be computed in the end.  
 
-    => Input data:    play_a_xxx.set
+    => Input data:    play_a_001.set
     
     => MATLAB script: 1.play_filter_ref.m & 2.play_ica.m & 3.play_ev_bin_epo.m & 4.play_erp.m
     
-    => Output data:   play_a_xxx.erp
+    => Output data:   play_001.erp
    
 2. Performing the mass univariate analyses (factorial ANOVA) on ERP.   
 
