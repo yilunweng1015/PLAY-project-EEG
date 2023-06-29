@@ -1,4 +1,4 @@
-## EEG/ERP Data analysis (03/24/2020 updated by Yi-Lun Weng)
+## EEG/ECG signal analysis (03/24/2020 updated by Yi-Lun Weng)
   
 
 ## **Overview** 
